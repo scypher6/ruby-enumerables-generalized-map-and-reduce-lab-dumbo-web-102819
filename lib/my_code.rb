@@ -13,7 +13,9 @@ def reduce (array, starting_point = 0)
 	sum = 0
 	
 	if array.one?                   #if exactly one is true
-      return true
+    return true
+  end
+  
 	array.length.times { |index|
     if !!array[index] == false   #if any is false
       return false
