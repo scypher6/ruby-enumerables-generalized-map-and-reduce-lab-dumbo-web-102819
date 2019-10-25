@@ -17,8 +17,6 @@ def reduce (array, starting_point = 0)
     elseif !!array[index] == false   #if any is false
       return false
     end #end IF
-    
-   end
    
 	 sum += yield(array[index], starting_point)
 	 
