@@ -11,10 +11,11 @@ end
 #REDUCE
 def reduce (array, starting_point = 0)
 	sum = 0
-	array.length.times { |index|
-    if array.one?                   #if exactly one is true
+	
+	if array.one?                   #if exactly one is true
       return true
-    elseif !!array[index] == false   #if any is false
+	array.length.times { |index|
+    if !!array[index] == false   #if any is false
       return false
     end #end IF
    
